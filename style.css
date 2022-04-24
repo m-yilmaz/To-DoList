@@ -1,0 +1,106 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    margin: 1rem;
+    color: #333;
+}
+.todo{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 2rem; 
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 4rem auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+}
+
+form {
+    display: flex;
+}
+
+
+#title {
+    flex: 1;
+    margin-right: .5rem;
+    font-size: 1.4rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid #ccc;
+}
+
+#add {
+    font-size: 1.2rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid #ccc;
+    background-color: #eee;
+    color: #666;
+}
+
+#add:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+    cursor: pointer;
+}
+
+#add:active {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    color: #666;
+}
+
+ul.todos{
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+ul.todos>li{
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+    padding: .75rem;
+}
+
+ul.todos>li:nth-child(odd){
+    background-color: #eee;
+}
+
+ul.todos>li.done{
+    color: green;
+}
+ul.todos>li{
+    color: #333;
+}
+
+ul.todos>li:nth-child(even){
+    background-color: #fafafa;
+}
+
+ul.todos>li>input:first-child{
+    margin-right: 1rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+ul.todos>li.done>span:nth-child(2){
+    text-decoration: line-through;
+}
+
+ul.todos>li>a:last-child{
+    margin-left: auto;
+    text-decoration: none;
+    color: #aaa;
+}
+
+ul.todos>li>a:last-child:hover{
+    color: #333;
+}
